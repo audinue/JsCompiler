@@ -3,11 +3,11 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package audinue.jscompiler.server;
+package io.github.audinue.jscompiler.server;
 
-import audinue.jscompiler.compiler.JsCompiler;
-import audinue.jscompiler.compiler.JsCompilerOptions;
-import audinue.jscompiler.compiler.JsCompilerResult;
+import io.github.audinue.jscompiler.compiler.JsCompiler;
+import io.github.audinue.jscompiler.compiler.JsCompilerOptions;
+import io.github.audinue.jscompiler.compiler.JsCompilerResult;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.sun.net.httpserver.HttpExchange;

@@ -5,6 +5,9 @@
  */
 package audinue.jscompiler.compiler;
 
+import io.github.audinue.jscompiler.compiler.JsCompilerOptions;
+import io.github.audinue.jscompiler.compiler.JsCompiler;
+import io.github.audinue.jscompiler.compiler.JsCompilerResult;
 import com.google.gson.GsonBuilder;
 
 /**
