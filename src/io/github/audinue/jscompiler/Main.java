@@ -28,7 +28,7 @@ public class Main {
         server.setPort(Integer.parseInt(port));
     }
 
-    @Command(usage = "java -jar io.github.audinue.jscompiler.jar [options]")
+    @Command(usage = "java -jar jscompiler-server.jar [options]")
     void start(String... args) throws Exception {
         server.start();
         System.out.printf("Server started on %s:%s\n", server.getHost(), server.getPort());
