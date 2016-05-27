@@ -20,8 +20,9 @@ public class JsCompilerTest {
         // TODO code application logic here
         JsCompiler compiler = new JsCompiler();
         JsCompilerOptions options = new JsCompilerOptions();
-        options.js.add("D:\\amburadul\\pm\\packages\\render\\render.js");
-        options.js_output_file = "D:\\foo.js";
+        options.input = "var foo='foo';alert(foo);if(window){alert(foo);}alert(foo);";
+        options.assumeFunctionWrapper = true;
+        options.formatting = "PRETTY_PRINT";
         JsCompilerResult result = compiler.compile(options);
         System.out.println(new GsonBuilder().setPrettyPrinting().create().toJson(result));
     }

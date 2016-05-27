@@ -14,13 +14,10 @@ import java.net.InetSocketAddress;
  */
 public class JsServer {
 
-    public void start() {
-        try {
-            HttpServer server = HttpServer.create();
-            server.bind(new InetSocketAddress("127.0.0.1", 80), 0);
-            server.createContext("/", new JsServerHandler());
-            server.start();
-        } catch (Exception e) {
-        }
+    public void start() throws Exception {
+        HttpServer server = HttpServer.create();
+        server.bind(new InetSocketAddress("127.0.0.1", 80), 0);
+        server.createContext("/", new JsServerHandler());
+        server.start();
     }
 }
